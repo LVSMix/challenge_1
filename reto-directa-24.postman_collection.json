@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "bf16a281-bc31-408a-a510-c1908c82e4ff",
+		"name": "reto-directa-24",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1081095"
+	},
+	"item": [
+		{
+			"name": "https://directa24-movies.wiremockapi.cloud/api/movies/search?page=10",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://eron-movies.wiremockapi.cloud/api/movies/search?page=1",
+					"protocol": "http",
+					"host": [
+						"eron-movies",
+						"wiremockapi",
+						"cloud"
+					],
+					"path": [
+						"api",
+						"movies",
+						"search"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://eron-movies.wiremockapi.cloud/api/movies/search?page=2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eron-movies.wiremockapi.cloud/api/movies/search?page=2",
+					"protocol": "https",
+					"host": [
+						"eron-movies",
+						"wiremockapi",
+						"cloud"
+					],
+					"path": [
+						"api",
+						"movies",
+						"search"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/directors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/directors?threshold=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"directors"
+					],
+					"query": [
+						{
+							"key": "threshold",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
